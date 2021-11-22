@@ -50,14 +50,6 @@ system.angles.group[:] = angle_gr;
 
 hoomd.init.read_snapshot(system);
 
-'''
-# Print the Initaial Configuration 
-print ("================== Particles Initial Coordinates ==================\n")
-for i in system.particles.position:
-	print (i)
-print ("\n")
-'''
-
 # ========================= Force Fields =======================================
 #nl = hoomd.md.nlist.cell(); # Change to tree for large box size
 nl = hoomd.md.nlist.tree();
