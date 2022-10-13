@@ -6,9 +6,5 @@
 #SBATCH --output=hoomd-%j.out
 
 module load anaconda/anaconda3
-source activate hoomd
-
-#module load python/python-3.8.0-gcc-9.1.0 mvapich2/mvapich2-2.3.2-gcc-9.1.0+cuda10_1+slurm
-#source activate hoomd-6bb61d8
 
 python3 Poly3d.py 
