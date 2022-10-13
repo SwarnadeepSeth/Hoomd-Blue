@@ -56,6 +56,7 @@ nl = hoomd.md.nlist.tree();
 
 lj = hoomd.md.pair.lj(r_cut=2**(1./6.), nlist=nl)
 lj.pair_coeff.set('A', 'A', epsilon=1.0, sigma=1.0)
+lj.set_params(mode='shift')
 nl.reset_exclusions(exclusions = []);
 
 fene = hoomd.md.bond.fene()
